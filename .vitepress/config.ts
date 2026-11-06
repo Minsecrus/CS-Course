@@ -13,6 +13,10 @@ export default withMermaid(
       lineNumbers: true
     },
 
+    head: [
+      ['style', {}, 'mjx-assistive-mml { display: none !important; position: absolute !important; width: 0 !important; height: 0 !important; opacity: 0 !important; }']
+    ],
+
     mermaid: {
       // mermaid 自定义配置
     },
