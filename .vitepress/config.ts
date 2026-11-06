@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
+import markdownItKatex from '@iktakahiro/markdown-it-katex'
 
 export default withMermaid(
   defineConfig({
@@ -9,12 +10,14 @@ export default withMermaid(
     base: process.env.GITHUB_ACTIONS ? '/CS-Course/' : '/',
 
     markdown: {
-      math: true,
-      lineNumbers: true
+      lineNumbers: true,
+      config: (md) => {
+        md.use(markdownItKatex)
+      }
     },
 
     head: [
-      ['style', {}, 'mjx-assistive-mml { display: none !important; position: absolute !important; width: 0 !important; height: 0 !important; opacity: 0 !important; }']
+      ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css' }]
     ],
 
     mermaid: {
