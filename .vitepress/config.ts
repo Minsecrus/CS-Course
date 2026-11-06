@@ -28,7 +28,7 @@ export default withMermaid(
       // 顶部不重复放与首页按钮重叠的操作入口，保持纯粹简洁
       nav: [],
 
-      // 全局统一侧边栏，进入内页后可无缝在总览与两门课程之间穿梭
+      // 全局统一侧边栏，涵盖整站所有核心页面，进入内页后可无缝穿梭
       sidebar: [
         {
           text: '体系总览',
@@ -42,7 +42,7 @@ export default withMermaid(
           collapsed: false,
           items: [
             { text: '课程总纲与考核标准', link: '/计算机系统演化_抽象与妥协/' },
-            { text: '16 周教学与沙盒大纲', link: '/计算机系统演化_抽象与妥协/16周完整教学与沙盒实验大纲' }
+            { text: '16 周教学与沙盒实验大纲', link: '/计算机系统演化_抽象与妥协/16周完整教学与沙盒实验大纲' }
           ]
         },
         {
@@ -50,7 +50,7 @@ export default withMermaid(
           collapsed: false,
           items: [
             { text: '课程总纲与考核标准', link: '/人机状态边界与现代UI工程/' },
-            { text: '16 周教学与工坊大纲', link: '/人机状态边界与现代UI工程/16周完整教学与对抗工坊大纲' }
+            { text: '16 周教学与实战工坊大纲', link: '/人机状态边界与现代UI工程/16周完整教学与对抗工坊大纲' }
           ]
         }
       ],
@@ -62,7 +62,7 @@ export default withMermaid(
 
       outline: {
         level: [2, 3],
-        label: '本页大纲'
+        label: '本页目录'
       },
 
       search: {
