@@ -41,7 +41,17 @@ export default withMermaid(
           text: '体系总览',
           collapsed: false,
           items: [
-            { text: '10+2 全局指南与依赖图', link: '/guide' }
+            { text: '10+2 全局指南与依赖图', link: '/guide' },
+            { text: '定制学习路线', link: '/路线/' },
+            { text: '└─ UI 审美与交互工程路线', link: '/路线/UI审美与交互工程路线' }
+          ]
+        },
+        {
+          text: '经典教材导读',
+          collapsed: false,
+          items: [
+            { text: '导读总览与心路历程', link: '/导读/' },
+            { text: '01. SICP 导读', link: '/导读/SICP' }
           ]
         },
         {
