@@ -14,6 +14,7 @@
 ```mermaid
 ---
 config:
+  look: classic
   htmlLabels: false
   markdownAutoWrap: false
   flowchart:

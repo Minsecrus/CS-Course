@@ -14,6 +14,17 @@
 用一套“解决大型系统复杂度”的哲学去教一个“还没写过几百行代码”的初学者，就像给还没走稳路的人讲空气动力学。要真正读懂 `SICP` 并在脑子里长出肌肉，必须经历以下**五个阶段的“碰壁 $\rightarrow$ 破局 $\rightarrow$ 顿悟”心路历程**。
 
 ```mermaid
+---
+config:
+  look: classic
+  htmlLabels: false
+  markdownAutoWrap: false
+  flowchart:
+    htmlLabels: false
+    wrappingWidth: 320
+    nodeSpacing: 20
+    rankSpacing: 36
+---
 flowchart LR
     S1["第一关：过程抽象<br/>戒掉人肉压栈<br/>学会信任契约"] --> S2["第二关：高阶函数<br/>被重复循环折磨<br/>学会抽离控制骨架"]
     S2 --> S3["第三关：数据抽象<br/>打破内存块执念<br/>看懂万物皆树与契约"]

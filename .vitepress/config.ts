@@ -21,7 +21,16 @@ export default withMermaid(
     ],
 
     mermaid: {
-      // mermaid 自定义配置
+      theme: 'default',
+      look: 'classic',
+      htmlLabels: false,
+      markdownAutoWrap: false,
+      flowchart: {
+        htmlLabels: false,
+        wrappingWidth: 400,
+        nodeSpacing: 24,
+        rankSpacing: 48
+      }
     },
 
     themeConfig: {

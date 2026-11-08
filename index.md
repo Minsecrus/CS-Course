@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "计算机科学个人体系"
-  text: "从硅基物理到认知"
+  text: "从物理到认知"
   tagline: "10 本经典教材 + 2 门自创课"
   actions:
     - theme: brand
